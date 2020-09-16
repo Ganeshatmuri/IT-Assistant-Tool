@@ -154,8 +154,6 @@ class basicpage(tk.Frame):
             Text=tk.Label(Top,text="Patch Information:",font=("freemono",12,"bold"),foreground='black')
             tpatt=tk.Label(Top,text=Output,font=("freemono",12,"bold"),foreground='black')
             Outputfileobject.close()
-            Text.after(60000, lambda: Text.destroy())
-            tpatt.after(60000, lambda: tpatt.destroy())
             Text.place(x=0,y=0)
             tpatt.place(x=60,y=30)
 
